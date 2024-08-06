@@ -1,0 +1,43 @@
+.swiper {
+  height: 100%;
+  max-width: 1196px;
+}
+
+.swiper-slide {
+  width: auto;
+  max-height: 486px;
+  height: 100%;
+
+  transition: all 0.3s ease-in !important;
+
+  &-active {
+    width: 404px !important;
+    max-height: 100%;
+    .deals-card__text {
+      opacity: 1;
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 27px;
+  height: 27px;
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: #b6b6b6;
+    border-radius: 100%;
+  }
+
+  &-active {
+    border: 1px solid #b6b6b6;
+  }
+}
