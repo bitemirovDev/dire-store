@@ -1,8 +1,8 @@
 import Swiper from 'swiper/bundle';
-import 'swiper/css';
+// import 'swiper/css';
 
-function swiper() {
-  const swiper = new Swiper('.swiper', {
+function DealsSwiper() {
+  const swiper = new Swiper('.deals-swiper', {
     slidesPerView: 3,
     autoplay: true,
     speed: 500,
@@ -13,10 +13,10 @@ function swiper() {
       clickable: true,
     },
     navigation: {
-      nextEl: '.next__btn',
-      prevEl: '.prev__btn',
+      nextEl: '.deals__swiper-buttons .next__btn',
+      prevEl: '.deals__swiper-buttons .prev__btn',
     },
   });
 }
 
-export default swiper;
+export default DealsSwiper;

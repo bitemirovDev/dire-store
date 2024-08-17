@@ -1,0 +1,20 @@
+<div class="arrivals__card">
+  <div class="arrivals__card-image">
+    <img src="./img/new-arrivals/@@img.webp" alt="name" />
+  </div>
+  <div class="arrivals__card-desc">
+    <h5 class="arrivals__card-title">@@name</h5>
+  </div>
+  <div class="arrivals__card-reviews">
+    <span>(4.1k)</span>
+    <div class="arrivals__card-rating">
+      @@for(let i = 0; i < context.rating; i++) {
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      }
+    </div>
+  </div>
+  <div class="arrivals__card-price">
+    <span>@@price</span>
+    <span class="arrivals__card-status">Almost Sold Out</span>
+  </div>
+</div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Стартовый шаблон</title>
+    <title>FASCO</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -12,13 +12,17 @@
   <div class="container">
     <div class="nav__row">
       <div class="nav__logo">
-        <a href="#!">Fasco</a>
+        <a href="../../index.html">Fasco</a>
       </div>
-      <ul class="nav__list">
-        <li class="nav__list-item active">Home</li>
+      <ul class="nav__list" id="header-nav">
+        <li class="nav__list-item active">
+          <a href="./index.html">Home</a>
+        </li>
         <li class="nav__list-item">Deals</li>
         <li class="nav__list-item">New Arrivals</li>
-        <li class="nav__list-item">Packages</li>
+        <li class="nav__list-item">
+          <a href="./shop.html">Shop</a>
+        </li>
         <!-- <li class="nav__list-item">Pages <img src="./img/icons/arrow_down.svg" alt="arrow" /></li> -->
         <!-- <li class="nav__list-item">Sign in</li> -->
       </ul>
@@ -135,7 +139,7 @@
     </div>
 
     <div class="deals__right">
-      <div class="swiper">
+      <div class="swiper deals-swiper">
   <div class="swiper-wrapper"><div class="swiper-slide">
   <article class="deals-card">
     <div class="deals-card__image">
@@ -199,14 +203,7 @@
 </div>
 </div>
 
-
-      <div class="deals__swiper-pagination">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
-
+      <div class="deals__swiper-pagination"></div>
       <div class="deals__swiper-buttons">
         <button class="prev__btn">
           <svg
@@ -260,13 +257,487 @@
         <li class="arrivals__nav-item">Discount Deals</li>
       </ul>
     </nav>
+    <div class="arrivals__grid">
+      <!-- <div class="arrivals__card">
+        <div class="arrivals__card-image">
+          <img src="./img/new-arrivals/206007689-2.webp" alt="" />
+        </div>
+        <div class="arrivals__card-desc">
+          <h5 class="arrivals__card-title">Shiny Dress</h5>
+          <div class="arrivals__card-rating">
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+          </div>
+        </div>
+        <div class="arrivals__card-reviews">
+          <p>(4.1k) Customer Reviews</p>
+        </div>
+        <div class="arrivals__card-price">
+          <span>$95.50</span>
+          <span class="arrivals__card-status">Almost Sold Out</span>
+        </div>
+      </div>
+      <div class="arrivals__card">
+        <div class="arrivals__card-image">
+          <img src="./img/new-arrivals/206007689-2.webp" alt="" />
+        </div>
+        <div class="arrivals__card-desc">
+          <h5 class="arrivals__card-title">Shiny Dress</h5>
+          <div class="arrivals__card-rating">
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+          </div>
+        </div>
+        <div class="arrivals__card-reviews">
+          <p>(4.1k) Customer Reviews</p>
+        </div>
+        <div class="arrivals__card-price">
+          <span>$95.50</span>
+          <span class="arrivals__card-status">Almost Sold Out</span>
+        </div>
+      </div>
+      <div class="arrivals__card">
+        <div class="arrivals__card-image">
+          <img src="./img/new-arrivals/206007689-2.webp" alt="test" />
+        </div>
+        <div class="arrivals__card-desc">
+          <h5 class="arrivals__card-title">Shiny Dress</h5>
+          <div class="arrivals__card-rating">
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+            <img src="./img/icons/rating-star.svg" alt="rating" />
+          </div>
+        </div>
+        <div class="arrivals__card-reviews">
+          <p>(4.1k) Customer Reviews</p>
+        </div>
+        <div class="arrivals__card-price">
+          <span>$95.50</span>
+          <span class="arrivals__card-status">Almost Sold Out</span>
+        </div>
+      </div> -->
+      <div class="arrivals__card">
+  <div class="arrivals__card-image">
+    <img src="./img/new-arrivals/asos-design-bomber-smart-co-ord-with-pocket-detaling-in-navy.webp" alt="name" />
+  </div>
+  <div class="arrivals__card-desc">
+    <h5 class="arrivals__card-title">ASOS DESIGN bomber smart co-ord with pocket detaling in navy</h5>
+  </div>
+  <div class="arrivals__card-reviews">
+    <span>(4.1k)</span>
+    <div class="arrivals__card-rating">
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+    </div>
+  </div>
+  <div class="arrivals__card-price">
+    <span>$77.00</span>
+    <span class="arrivals__card-status">Almost Sold Out</span>
+  </div>
+</div>
+<div class="arrivals__card">
+  <div class="arrivals__card-image">
+    <img src="./img/new-arrivals/asos-design-relaxed-linen-blend-slouchy-suit-in-olive-green.webp" alt="name" />
+  </div>
+  <div class="arrivals__card-desc">
+    <h5 class="arrivals__card-title">ASOS DESIGN relaxed linen blend slouchy suit in olive green</h5>
+  </div>
+  <div class="arrivals__card-reviews">
+    <span>(4.1k)</span>
+    <div class="arrivals__card-rating">
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+    </div>
+  </div>
+  <div class="arrivals__card-price">
+    <span>$56.00</span>
+    <span class="arrivals__card-status">Almost Sold Out</span>
+  </div>
+</div>
+<div class="arrivals__card">
+  <div class="arrivals__card-image">
+    <img src="./img/new-arrivals/asos-design-relaxed-revere-shirt-in-pink-stripe.webp" alt="name" />
+  </div>
+  <div class="arrivals__card-desc">
+    <h5 class="arrivals__card-title">ASOS DESIGN relaxed revere shirt in pink stripe</h5>
+  </div>
+  <div class="arrivals__card-reviews">
+    <span>(4.1k)</span>
+    <div class="arrivals__card-rating">
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+    </div>
+  </div>
+  <div class="arrivals__card-price">
+    <span>$79.50</span>
+    <span class="arrivals__card-status">Almost Sold Out</span>
+  </div>
+</div>
+<div class="arrivals__card">
+  <div class="arrivals__card-image">
+    <img src="./img/new-arrivals/asos-design-relaxed-revere-shirt-with-cherub-placement-print-in-black.webp" alt="name" />
+  </div>
+  <div class="arrivals__card-desc">
+    <h5 class="arrivals__card-title">ASOS DESIGN relaxed revere shirt with cherub placement print in black</h5>
+  </div>
+  <div class="arrivals__card-reviews">
+    <span>(4.1k)</span>
+    <div class="arrivals__card-rating">
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+    </div>
+  </div>
+  <div class="arrivals__card-price">
+    <span>$39.99</span>
+    <span class="arrivals__card-status">Almost Sold Out</span>
+  </div>
+</div>
+<div class="arrivals__card">
+  <div class="arrivals__card-image">
+    <img src="./img/new-arrivals/asos-design-smart-cargo-co-ord-in-khaki.webp" alt="name" />
+  </div>
+  <div class="arrivals__card-desc">
+    <h5 class="arrivals__card-title">ASOS DESIGN smart cargo co-ord in khaki</h5>
+  </div>
+  <div class="arrivals__card-reviews">
+    <span>(4.1k)</span>
+    <div class="arrivals__card-rating">
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+    </div>
+  </div>
+  <div class="arrivals__card-price">
+    <span>$124.34</span>
+    <span class="arrivals__card-status">Almost Sold Out</span>
+  </div>
+</div>
+<div class="arrivals__card">
+  <div class="arrivals__card-image">
+    <img src="./img/new-arrivals/south-beach-stripe-swim-shorts-in-dark-sand.webp" alt="name" />
+  </div>
+  <div class="arrivals__card-desc">
+    <h5 class="arrivals__card-title">South beach stripe swim shorts in dark sand</h5>
+  </div>
+  <div class="arrivals__card-reviews">
+    <span>(4.1k)</span>
+    <div class="arrivals__card-rating">
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+      <img src="./img/icons/rating-star.svg" alt="star" />
+      
+    </div>
+  </div>
+  <div class="arrivals__card-price">
+    <span>$26.00</span>
+    <span class="arrivals__card-status">Almost Sold Out</span>
+  </div>
+</div>
+
+    </div>
+    <div class="arrivals__btn">
+      <button class="btn btn--medium">Veiw more</button>
+    </div>
   </div>
 </section>
 
-    <footer class="footer">
-	<div class="container">
-		<h2>Footer</h2>
-	</div>
+    <section class="features">
+  <div class="container">
+    <ul class="features__list">
+      <li class="features__list-element">
+        <div class="features__list-picture">
+          <img src="./img/features/quality.svg" alt="quality" />
+        </div>
+        <div class="features__list-text">
+          <p class="features__list-title">High Quality</p>
+          <p class="features__list-desc">crafted from top materials</p>
+        </div>
+      </li>
+      <li class="features__list-element">
+        <div class="features__list-picture">
+          <img src="./img/features/waranty.svg" alt="waranty" />
+        </div>
+        <div class="features__list-text">
+          <p class="features__list-title">Warrany Protection</p>
+          <p class="features__list-desc">Over 2 years</p>
+        </div>
+      </li>
+      <li class="features__list-element">
+        <div class="features__list-picture">
+          <img src="./img/features/shipping.svg" alt="shipping" />
+        </div>
+        <div class="features__list-text">
+          <p class="features__list-title">Free Shipping</p>
+          <p class="features__list-desc">Order over 150 $</p>
+        </div>
+      </li>
+      <li class="features__list-element">
+        <div class="features__list-picture">
+          <img src="./img/features/call.svg" alt="call" />
+        </div>
+        <div class="features__list-text">
+          <p class="features__list-title">24 / 7 Support</p>
+          <p class="features__list-desc">Dedicated support</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+ <section class="customers">
+  <div class="container">
+    <div class="customers__head">
+      <h2 class="customers__title headline-2">This Is What Our Customers Say</h2>
+      <p class="customers__desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis
+      </p>
+    </div>
+
+    <div class="swiper customers-swiper">
+  <div class="swiper-wrapper"><div class="swiper-slide">
+  <div class="customers__review">
+    <div class="customers__review-picture">
+      <img src="./img/customers/customer-1.jpg" alt="customer-1.jpg" />
+    </div>
+    <div class="customers__review-content">
+      <p class="customers__review-text">You won't regret it. I would like to personally thank you for your outstanding product. Absolutely wonderful!</p>
+      <div class="customers__review-rating">
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+      </div>
+      <span class="customers__review-name">Joanna M.</span>
+      <span class="customers__review-profession">Traveler</span>
+    </div>
+  </div>
+</div>
+<div class="swiper-slide">
+  <div class="customers__review">
+    <div class="customers__review-picture">
+      <img src="./img/customers/customer-2.jpg" alt="customer-2.jpg" />
+    </div>
+    <div class="customers__review-content">
+      <p class="customers__review-text">Just what I was looking for. Thank you for making it painless, pleasant and most of all hassle free! All products are great.</p>
+      <div class="customers__review-rating">
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+      </div>
+      <span class="customers__review-name">Eric K.</span>
+      <span class="customers__review-profession">UI Designer</span>
+    </div>
+  </div>
+</div>
+<div class="swiper-slide">
+  <div class="customers__review">
+    <div class="customers__review-picture">
+      <img src="./img/customers/customer-3.jpg" alt="customer-3.jpg" />
+    </div>
+    <div class="customers__review-content">
+      <p class="customers__review-text">Items That I ordered were the best investment I ever made. I can't say enough about your quality service.</p>
+      <div class="customers__review-rating">
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+      </div>
+      <span class="customers__review-name">Michael B.</span>
+      <span class="customers__review-profession">UI Designer</span>
+    </div>
+  </div>
+</div>
+<div class="swiper-slide">
+  <div class="customers__review">
+    <div class="customers__review-picture">
+      <img src="./img/customers/customer-4.jpg" alt="customer-4.jpg" />
+    </div>
+    <div class="customers__review-content">
+      <p class="customers__review-text">I love this shirt! The fabric feels premium, and the fit is just right—not too tight and not too loose. I've washed it a few times, and it still looks brand new. Definitely getting more colors!</p>
+      <div class="customers__review-rating">
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+      </div>
+      <span class="customers__review-name">Jane P.</span>
+      <span class="customers__review-profession">Actress</span>
+    </div>
+  </div>
+</div>
+<div class="swiper-slide">
+  <div class="customers__review">
+    <div class="customers__review-picture">
+      <img src="./img/customers/customer-5.jpeg" alt="customer-5.jpeg" />
+    </div>
+    <div class="customers__review-content">
+      <p class="customers__review-text">These jeans are amazing! They're super comfortable and have just the right amount of stretch. Plus, they look really stylish with everything. Perfect for both casual and dressed-up looks.</p>
+      <div class="customers__review-rating">
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+      </div>
+      <span class="customers__review-name">Camila F.</span>
+      <span class="customers__review-profession">Writer</span>
+    </div>
+  </div>
+</div>
+<div class="swiper-slide">
+  <div class="customers__review">
+    <div class="customers__review-picture">
+      <img src="./img/customers/customer-6.jpeg" alt="customer-6.jpeg" />
+    </div>
+    <div class="customers__review-content">
+      <p class="customers__review-text">This sweater is perfect for daily use. It's cozy without being too heavy, and the color is exactly as shown. I’ve been wearing it almost every day since I got it, and it’s holding up well. Great buy!</p>
+      <div class="customers__review-rating">
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+        <img src="./img/icons/rating-star.svg" alt="star" />
+      </div>
+      <span class="customers__review-name">Clay C.</span>
+      <span class="customers__review-profession">Businessman</span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+    <div class="customers__swiper-buttons">
+      <button class="prev__btn">
+        <svg
+          width="9"
+          height="16"
+          viewBox="0 0 9 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.00018 1L8.00018 8L1.00019 15"
+            stroke="black"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="next__btn">
+        <svg
+          width="9"
+          height="16"
+          viewBox="0 0 9 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.00018 1L8.00018 8L1.00019 15"
+            stroke="black"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+    <section class="subscribe">
+  <div class="container">
+    <div class="subscribe__container">
+      <div class="subscribe__head">
+        <h2 class="subscribe__title headline-2">Subscribe To Our Newsletter</h2>
+        <p class="subscribe__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices
+          sollicitudin aliquam sem. Scelerisque duis ultrices sollicitudin
+        </p>
+      </div>
+      <div class="subscribe__input">
+        <input placeholder="example@gmail.com" type="email" />
+      </div>
+      <div class="subscribe__btn">
+        <button class="btn btn--small">Subscribe Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+ <footer class="footer">
+  <div class="container">
+    <div class="footer__row">
+      <div class="footer__logo">
+        <a href="#!">Fasco</a>
+      </div>
+
+      <nav class="footer__nav">
+        <ul>
+          <li>Support Center</li>
+          <li>Invoicing</li>
+          <li>Contract</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>FAQ,s</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer__copyright">
+      <p>Copyright © 2022 Xpro . All Rights Reseved.</p>
+    </div>
+  </div>
 </footer>
 
     <script src="./js/index.bundle.js"></script>

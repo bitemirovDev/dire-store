@@ -1,0 +1,69 @@
+<section class="fashion">
+  <div class="container">
+    <div class="fashion__header">
+      <h2 class="fashion__title headline-3">Fashion</h2>
+      @@include('./templates/breadcrumbs.html')
+    </div>
+
+    <div class="fashion__content">
+      <div class="fashion__filters">
+        <h4 class="fashion__filters-title">Filters</h4>
+        <div class="fashion__filter-sizes">
+          <h5>Size</h5>
+          <ul>
+            <li class="active">XS</li>
+            <li>S</li>
+            <li>M</li>
+            <li>L</li>
+            <li>XL</li>
+          </ul>
+        </div>
+        <div class="fashion__filter-prices">
+          <h5>Prices</h5>
+          <ul>
+            <li class="active">$10-$50</li>
+            <li>$50-$100</li>
+            <li>$100-$150</li>
+            <li>$150-$200</li>
+            <li>$300-$400</li>
+          </ul>
+        </div>
+        <div class="fashion__filter-brands">
+          <h5>Brands</h5>
+          <ul>
+            <li>Adidas</li>
+            <li>Nike</li>
+            <li>BOSS</li>
+            <li>Puma</li>
+            <li>Kappa</li>
+            <li>Gucci</li>
+            <li>Carrhart</li>
+            <li>Polo</li>
+            <li>Off-White</li>
+          </ul>
+
+          <div class="filter__arrow">
+            <img src="./img/icons/filter_arrow.svg" alt="arrow" />
+          </div>
+        </div>
+      </div>
+      <div class="fashion__products">
+        @@loop('./templates/fashion-card.html', '../data/fashion.json')
+      </div>
+    </div>
+
+    <div class="fashion__pagination">
+      <ul>
+        <li class="pagination__btn pagination__btn-prev">
+          <img src="./img/icons/pagination_arrow.svg" alt="pagination button" />
+        </li>
+        <li class="fashion__pagination-number active">1</li>
+        <li class="fashion__pagination-number">2</li>
+        <li class="fashion__pagination-number">3</li>
+        <li class="pagination__btn pagination__btn-next">
+          <img src="./img/icons/pagination_arrow.svg" alt="pagination button" />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
