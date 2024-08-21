@@ -22,9 +22,53 @@ function shopPagination() {
   const prevBtn = fashionPagination.querySelector('.pagination__btn-prev');
   const nextBtn = fashionPagination.querySelector('.pagination__btn-next');
 
-  prevBtn.onclick = () => {};
+  let currentPageIndex = Array.from(paginationNumbers).findIndex((num) =>
+    num.classList.contains('active'),
+  );
 
-  nextBtn.onclick = () => {};
+  // Навешиваем обработчики событий для кнопок
+  prevBtn.onclick = () => changePage(currentPageIndex - 1);
+  nextBtn.onclick = () => changePage(currentPageIndex + 1);
+
+  // Навешиваем обработчики событий на номера страниц
+  paginationList.onclick = (event) => {
+    const target = event.target;
+
+    if (target.classList.contains('fashion__pagination-number')) {
+      const pageIndex = Array.from(paginationNumbers).indexOf(target);
+      changePage(pageIndex);
+    }
+  };
+
+  function changePage(newPageIndex) {
+    if (newPageIndex < 0 || newPageIndex >= paginationNumbers.length) return;
+
+    paginationNumbers.forEach((pageNumber) => pageNumber.classList.remove('active'));
+    paginationNumbers[newPageIndex].classList.add('active');
+
+    currentPageIndex = newPageIndex;
+
+    updateButtonStates();
+  }
+
+  function updateButtonStates() {
+    // Если первая страница активна, блокируем кнопку "Назад"
+    if (currentPageIndex === 0) {
+      prevBtn.classList.add('disabled');
+    } else {
+      prevBtn.classList.remove('disabled');
+    }
+
+    // Если последняя страница активна, блокируем кнопку "Вперед"
+    if (currentPageIndex === paginationNumbers.length - 1) {
+      nextBtn.classList.add('disabled');
+    } else {
+      nextBtn.classList.remove('disabled');
+    }
+  }
+
+  // Инициализация состояния кнопок при загрузке
+  updateButtonStates();
 }
 
 export default shopPagination;
