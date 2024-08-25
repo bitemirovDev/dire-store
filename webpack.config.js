@@ -5,6 +5,7 @@ const config = {
     contacts: './src/js/contacts.js',
     product: './src/js/product.js',
     shop: './src/js/shop.js',
+    cart: './src/js/cart.js',
   },
   output: {
     filename: '[name].bundle.js',
