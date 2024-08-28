@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FASCO</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header"><nav class="nav">
+  <div class="container">
+    <div class="nav__row">
+      <div class="nav__logo">
+        <a href="../../index.html">Fasco</a>
+      </div>
+      <ul class="nav__list" id="header-nav">
+        <li class="nav__list-item active">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="nav__list-item">Deals</li>
+        <li class="nav__list-item">New Arrivals</li>
+        <li class="nav__list-item">
+          <a href="./shop.html">Shop</a>
+        </li>
+        <!-- <li class="nav__list-item">Pages <img src="./img/icons/arrow_down.svg" alt="arrow" /></li> -->
+        <!-- <li class="nav__list-item">Sign in</li> -->
+      </ul>
+
+      <div class="nav__btn">
+        <button class="btn btn--small">
+          <a href="#!">Sign in</a>
+        </button>
+      </div>
+      <!-- <ul class="nav__btns"> 
+        <li class="nav__btns-item">
+          <button>
+            <img src="./img/icons/search.svg" alt="search" />
+          </button>
+        </li>
+        <li class="nav__btns-item">
+          <button>
+            <img src="./img/icons/user.svg" alt="user" />
+          </button>
+        </li>
+        <li class="nav__btns-item">
+          <button>
+            <img src="./img/icons/star.svg" alt="star" />
+          </button>
+        </li>
+        <li class="nav__btns-item">
+          <button>
+            <img src="./img/icons/cart.svg" alt="cart" />
+          </button>
+        </li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+</header>
+ <div class="checkout">
+  <div class="container">
+    <h2 class="checkout__title headline-3">FASCO Demo Checkout</h2>
+
+    <div class="checkout__container">
+      <div class="checkout__inputs">
+        <div class="checkout__section checkout__section--contact">
+          <h3 class="checkout__section-title">Contact</h3>
+          <div class="checkout__account">
+            <p>Have an account? <a href="#" class="checkout__account-link">Create Account</a></p>
+          </div>
+          <div class="checkout__field">
+            <input type="email" id="email" class="checkout__input" placeholder="" />
+            <label class="checkout__label" for="email">Email Address</label>
+          </div>
+        </div>
+        <div class="checkout__section checkout__section--delivery">
+          <h3 class="checkout__section-title">Delivery</h3>
+          <div class="checkout__field">
+            <div class="custom-select">
+              <div class="custom-select__trigger">
+                <span>Country / Region</span>
+                <div class="arrow"></div>
+              </div>
+              <div class="custom-select__options">
+                <div class="custom-select__option">Option 1</div>
+                <div class="custom-select__option">Option 2</div>
+                <div class="custom-select__option">Option 3</div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout__field checkout__field--row">
+            <div class="checkout__field-item">
+              <input type="text" id="first-name" class="checkout__input" placeholder="" />
+              <label class="checkout__label" for="first-name">First Name</label>
+            </div>
+            <div class="checkout__field-item">
+              <input type="text" id="last-name" class="checkout__input" placeholder="" />
+              <label class="checkout__label" for="last-name">Last Name</label>
+            </div>
+          </div>
+          <div class="checkout__field">
+            <input type="text" id="address" class="checkout__input" placeholder="" />
+            <label class="checkout__label" for="address">Address</label>
+          </div>
+          <div class="checkout__field checkout__field--row">
+            <div class="checkout__field-item">
+              <input type="text" id="city" class="checkout__input" placeholder="" />
+              <label class="checkout__label" for="city">City</label>
+            </div>
+            <div class="checkout__field-item">
+              <input type="text" id="postal-code" class="checkout__input" placeholder="" />
+              <label class="checkout__label" for="postal-code">Postal Code</label>
+            </div>
+          </div>
+          <div class="checkout__checkbox">
+            <input type="checkbox" id="save-info1" class="checkout__checkbox-input" />
+            <span class="checkout__checkbox-span"></span>
+            <label for="save-info1" class="checkout__checkbox-label"
+              >Save This Info For Future</label
+            >
+          </div>
+        </div>
+        <div class="checkout__section checkout__section--payment">
+          <h3 class="checkout__section-title">Payment</h3>
+
+          <div class="checkout__field">
+            <div class="custom-select">
+              <div class="custom-select__trigger">
+                <span>Credit Card</span>
+                <div class="arrow"></div>
+              </div>
+              <div class="custom-select__options">
+                <div class="custom-select__option">Option 1</div>
+                <div class="custom-select__option">Option 2</div>
+                <div class="custom-select__option">Option 3</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment__bg-container">
+            <div class="checkout__field">
+              <input type="text" id="card-number" class="checkout__input" placeholder="" />
+              <label class="checkout__label" for="card-number">Card Number</label>
+
+              <div class="checkout__field-lock">
+                <img src="./img/icons/ic_round-lock.svg" alt="lock icon" />
+              </div>
+            </div>
+            <div class="checkout__field checkout__field--row">
+              <div class="checkout__field-item">
+                <input type="text" id="expiration-date" class="checkout__input" placeholder="" />
+                <label class="checkout__label" for="expiration-date">Expiration Date</label>
+              </div>
+              <div class="checkout__field-item">
+                <input type="text" id="security-code" class="checkout__input" placeholder="" />
+                <label class="checkout__label" for="security-code">Security Code</label>
+              </div>
+            </div>
+            <div class="checkout__field">
+              <input type="text" id="card-holder-name" class="checkout__input" placeholder="" />
+              <label class="checkout__label" for="card-holder-name">Card Holder Name</label>
+            </div>
+            <div class="checkout__checkbox">
+              <input type="checkbox" id="save-info2" class="checkout__checkbox-input" />
+              <span class="checkout__checkbox-span"></span>
+              <label for="save-info2" class="checkout__checkbox-label"
+                >Save This Info For Future</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="checkout__inputs-btn">
+          <button class="btn btn--wide btn--small">Pay Now</button>
+        </div>
+        <div class="checkout__inputs-copyright">
+          <p>Copyright © 2022 FASCO . All Rights Reseved.</p>
+        </div>
+      </div>
+      <div class="checkout__summary">
+        <ul class="checkout__products">
+          <li class="checkout__products-item">
+            <div class="checkout__products-img">
+              <img src="./img/products/aape-1/205316648-1-grey.avif" alt="product image" />
+              <span class="checkout__products-quantity">1</span>
+            </div>
+            <div class="checkout__products-details">
+              <p class="checkout__products-title">Aape By A Bathing Ape ribbed beanie in grey</p>
+              <span class="checkout__products-size">Size: M</span>
+              <span class="checkout__products-price">$100.00</span>
+            </div>
+          </li>
+          <li class="checkout__products-item">
+            <div class="checkout__products-img">
+              <img src="./img/products/aape-1/205316648-1-grey.avif" alt="product image" />
+              <span class="checkout__products-quantity">1</span>
+            </div>
+            <div class="checkout__products-details">
+              <p class="checkout__products-title">Aape By A Bathing Ape ribbed beanie in grey</p>
+              <span class="checkout__products-size">Size: M</span>
+              <span class="checkout__products-price">$100.00</span>
+            </div>
+          </li>
+        </ul>
+        <div class="checkout__discount">
+          <div class="checkout__field">
+            <input type="text" id="discount-code" class="checkout__input" placeholder="" />
+            <label class="checkout__label" for="discount-code">Discount code</label>
+          </div>
+          <button class="btn btn--small checkout__discount-button">Apply</button>
+        </div>
+        <div class="checkout__totals">
+          <div class="checkout__totals-item">
+            <span class="checkout__totals-label">Subtotal</span>
+            <span class="checkout__totals-value">$100.00</span>
+          </div>
+          <div class="checkout__totals-item">
+            <span class="checkout__totals-label">Shipping</span>
+            <span class="checkout__totals-value">$40.00</span>
+          </div>
+          <div class="checkout__totals-item checkout__totals-item--total">
+            <span class="checkout__totals-label">Total</span>
+            <span class="checkout__totals-value">$140.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <section class="subscribe">
+  <div class="container">
+    <div class="subscribe__container">
+      <div class="subscribe__head">
+        <h2 class="subscribe__title headline-2">Subscribe To Our Newsletter</h2>
+        <p class="subscribe__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices
+          sollicitudin aliquam sem. Scelerisque duis ultrices sollicitudin
+        </p>
+      </div>
+      <div class="subscribe__input">
+        <input placeholder="example@gmail.com" type="email" />
+      </div>
+      <div class="subscribe__btn">
+        <button class="btn btn--small">Subscribe Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+ <footer class="footer">
+  <div class="container">
+    <div class="footer__row">
+      <div class="footer__logo">
+        <a href="#!">Fasco</a>
+      </div>
+
+      <nav class="footer__nav">
+        <ul>
+          <li>Support Center</li>
+          <li>Invoicing</li>
+          <li>Contract</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>FAQ,s</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer__copyright">
+      <p>Copyright © 2022 Xpro . All Rights Reseved.</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="./js/checkout.bundle.js"></script>
+  </body>
+</html>
