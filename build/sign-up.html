@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FASCO</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section class="sign-up">
+  <div class="sign-up__picture">
+    <img src="./img/auth/long-sleeve-work-shirt.jpg" alt="carhartt picture" />
+  </div>
+
+  <div class="sign-up__container">
+    <div class="sign-up__content">
+      <h1 class="sign-up__title">Fasco</h1>
+      <h2 class="sign-up__subtitle">Create Account</h2>
+      <div class="sign-up__socials">
+        <button class="sign-up__social-button sign-up__social-button--google">
+          <img src="./img/auth/socials/google.jpg" alt="Google" />
+          Sign up with Google
+        </button>
+        <button class="sign-up__social-button sign-up__social-button--email">
+          <img src="./img/auth/socials/email.jpg" alt="Email" />
+          Sign up with Email
+        </button>
+      </div>
+
+      <div class="sign-up__separator">
+        <span class="sign-up__separator-text">OR</span>
+      </div>
+
+      <div class="sign-up__form">
+        <div class="sign-up__form-group">
+          <div class="sign-up__form-field">
+            <input
+              type="text"
+              placeholder=""
+              class="sign-up__input"
+              name="first_name"
+              id="first_name" />
+            <label class="sign-up__input-label" for="first_name">First Name</label>
+          </div>
+
+          <div class="sign-up__form-field">
+            <input
+              type="text"
+              placeholder=""
+              class="sign-up__input"
+              name="last_name"
+              id="last_name" />
+            <label class="sign-up__input-label" for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="sign-up__form-group">
+          <div class="sign-up__form-field">
+            <input type="email" placeholder="" class="sign-up__input" name="email" id="email" />
+            <label class="sign-up__input-label" for="email">Email</label>
+          </div>
+          <div class="sign-up__form-field">
+            <input type="tel" placeholder="" class="sign-up__input" name="phone" id="phone" />
+            <label class="sign-up__input-label" for="phone">Phone</label>
+          </div>
+        </div>
+        <div class="sign-up__form-group">
+          <div class="sign-up__form-field">
+            <input
+              type="password"
+              placeholder=""
+              class="sign-up__input"
+              name="password"
+              id="password" />
+            <label class="sign-up__input-label" for="password">Password</label>
+          </div>
+
+          <div class="sign-up__form-field">
+            <input
+              type="password"
+              placeholder=""
+              class="sign-up__input"
+              name="confirm_password"
+              id="confirm_password" />
+            <label class="sign-up__input-label" for="confirm_password">Confirm password</label>
+          </div>
+        </div>
+        <div class="sign-up__btns">
+          <button type="submit" class="btn btn--wide btn--small sign-up__submit">
+            Create Account
+          </button>
+          <p>Already have an account? <a href="#!">Login</a></p>
+        </div>
+      </div>
+
+      <div class="sign-up__terms">
+        <p>FASCO Terms & Codnitions</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <script src="./js/auth.bundle.js"></script>
+  </body>
+</html>

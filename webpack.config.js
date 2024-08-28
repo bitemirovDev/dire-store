@@ -7,6 +7,7 @@ const config = {
     shop: './src/js/shop.js',
     cart: './src/js/cart.js',
     checkout: './src/js/checkout.js',
+    auth: './src/js/auth.js',
   },
   output: {
     filename: '[name].bundle.js',
